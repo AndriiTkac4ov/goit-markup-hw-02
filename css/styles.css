@@ -1,6 +1,55 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --hero-text-color: 
 
+}
 
 body {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+}
+
+/* primary text color: #212121; */
+/* secondary text color: #757575; */
+/* hero text color: #FFFFFF; */
+
+/* primary bcg color: E5E5E5 */
+/* secondary bcg color: #F5F4FA; */
+/* bcg of header: #FFFFFF; */
+/* bcg of hero and footer: #2F303A; */
+
+/* logo: */
+.logo-header,
+.logo-web,
+.logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+}
+
+.logo-web {
+    color: #2196F3;
+}
+
+.logo-footer {
+    color: #FFFFFF;
+}
+
+/* navigation: */
+.navigation,
+.contacts {
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #212121;
+}
+
+.contacts {   
+    color: #757575;
 }
