@@ -1,8 +1,9 @@
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --hero-text-color: 
-
+    --hero-text-color: #FFFFFF;
+    --hero-bcg-color: #2F303A;
+    --team-bcg-color: #F5F4FA;
 }
 
 body {
@@ -16,11 +17,12 @@ body {
 /* hero text color: #FFFFFF; */
 
 /* primary bcg color: E5E5E5 */
-/* secondary bcg color: #F5F4FA; */
+/* team bcg color: #F5F4FA; */
 /* bcg of header: #FFFFFF; */
 /* bcg of hero and footer: #2F303A; */
 
-/* logo: */
+/* header: */
+    /* logo */
 .logo-header,
 .logo-web,
 .logo-footer {
@@ -40,7 +42,7 @@ body {
     color: #FFFFFF;
 }
 
-/* navigation: */
+    /* navigation */
 .navigation,
 .contacts {
     list-style: none;
@@ -52,4 +54,33 @@ body {
 
 .contacts {   
     color: #757575;
+}
+
+/* hero */
+.hero,
+.footer {
+    background-color: var(--hero-bcg-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* section */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/* team  */
+.section-team {
+    background-color: var(--team-bcg-color);
 }
