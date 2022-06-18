@@ -4,6 +4,7 @@
     --hero-text-color: #FFFFFF;
     --hero-bcg-color: #2F303A;
     --team-bcg-color: #F5F4FA;
+    --team-member-bcg-color: #FFFFFF;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     color: #000000;
 }
 
@@ -49,11 +51,12 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #212121;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
 }
 
 .contacts {   
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 /* hero */
@@ -65,22 +68,79 @@ body {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--hero-text-color);
 }
 
-/* section */
+/* advantages */
+.advantages-items {
+    list-style: none;
+}
+
+.advantage-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.advantage-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/* activities */
 .section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
-/* team  */
+/* team */
 .section-team {
     background-color: var(--team-bcg-color);
+}
+
+.team {
+    list-style: none;
+}
+
+.team-member {
+    background: var(--team-member-bcg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-member-function {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    /* color: #757575; */
+}
+
+/* footer */
+.address-items {
+    list-style: none;
 }
