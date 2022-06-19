@@ -9,6 +9,7 @@
     --title-text-color: #212121;
     --location-text-color: #FFFFFF;
     --address-text-color: rgba(255, 255, 255, 0.6);
+    --filter-accent-color: #FFFFFF;;
 
     /* background colors */
     --primary-bcg-color: #FFFFFF;
@@ -17,6 +18,8 @@
     --hero-button-accent-color: #188CE8;
     --team-bcg-color: #F5F4FA;
     --team-members-bcg-color: #FFFFFF;
+    --portfolio-filter-bcg-color: #F5F4FA;
+    --portfolio-filter-accent-color: #2196F3;
 }
 
 body {
@@ -54,8 +57,18 @@ body {
     color: var(--logo-header-text-color);
 }
 
+.logo-header:hover,
+.logo-header:focus {
+    color: var(--accent-color);
+}
+
 .logo-footer {
     color: var(--logo-footer-text-color);
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+    color: var(--accent-color);
 }
 
     /* navigation */
@@ -223,4 +236,54 @@ body {
     color: var(--address-text-color);
 }
 
+
 /* Page Portfolio */
+/* filter */
+.portfolio-filter {
+    list-style: none;
+}
+
+.filter-title {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: var(--portfolio-filter-bcg-color);
+    border-radius: 4px;
+}
+
+.filter-title:hover,
+.filter-title:focus {
+    color: var(--filter-accent-color);
+    background: var(--portfolio-filter-accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* portfolio works */
+.portfolio-works {
+    list-style: none;
+}
+
+.portfolio-link {
+    list-style: normal;
+    text-decoration: none;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.portfolio-form {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
