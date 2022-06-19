@@ -1,20 +1,32 @@
 :root {
+    /* text colors */
     --primary-text-color: #757575;
-    --title-text-color: #212121;
+    --logo-web-text-color: #2196F3;
+    --logo-header-text-color: #000000;
+    --logo-footer-text-color: #FFFFFF;
+    --accent-color: #2196F3;
     --hero-text-color: #FFFFFF;
+    --title-text-color: #212121;
+    --location-text-color: #FFFFFF;
+    --address-text-color: rgba(255, 255, 255, 0.6);
+
+    /* background colors */
+    --primary-bcg-color: #FFFFFF;
     --hero-bcg-color: #2F303A;
+    --hero-button-color: #2196F3;
+    --hero-button-accent-color: #188CE8;
     --team-bcg-color: #F5F4FA;
-    --team-member-bcg-color: #FFFFFF;
+    --team-members-bcg-color: #FFFFFF;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background-color: var(--primary-bcg-color);
     color: var(--primary-text-color);
 }
 
-/* primary text color: #212121; */
-/* secondary text color: #757575; */
+/* primary text color: #757575; */
+/* secondary text color: #212121; */
 /* hero text color: #FFFFFF; */
 
 /* primary bcg color: E5E5E5 */
@@ -22,10 +34,11 @@ body {
 /* bcg of header: #FFFFFF; */
 /* bcg of hero and footer: #2F303A; */
 
+/* Page WebStudio */
 /* header: */
     /* logo */
-.logo-header,
 .logo-web,
+.logo-header,
 .logo-footer {
     font-family: 'Raleway';
     font-style: normal;
@@ -33,21 +46,33 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
+    text-decoration: none;
+    color: var(--logo-web-text-color);
 }
 
-.logo-web {
-    color: #2196F3;
+.logo-header {
+    color: var(--logo-header-text-color);
 }
 
 .logo-footer {
-    color: #FFFFFF;
+    color: var(--logo-footer-text-color);
 }
 
     /* navigation */
 .navigation,
 .contacts {
     list-style: none;
+}
+
+.nav-link,
+.mail-link,
+.tel-link {
+    text-decoration: none;
+}
+
+.nav-link,
+.contacts .mail-link,
+.contacts .tel-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -55,8 +80,26 @@ body {
     color: var(--title-text-color);
 }
 
-.contacts {   
+.current,
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.contacts .mail-link,
+.contacts .tel-link {   
     color: var(--primary-text-color);
+}
+
+.contacts .mail-link:hover,
+.contacts .mail-link:focus,
+.contacts .tel-link:hover,
+.contacts .tel-link:focus,
+.address .mail-link:hover,
+.address .mail-link:focus,
+.address .tel-link:hover,
+.address .tel-link:focus {
+    color: var(--accent-color);
 }
 
 /* hero */
@@ -73,6 +116,24 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--hero-text-color);
+    background-color: var(--hero-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-button-accent-color);
 }
 
 /* advantages */
@@ -117,7 +178,7 @@ body {
 }
 
 .team-member {
-    background: var(--team-member-bcg-color);
+    background: var(--team-members-bcg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -141,6 +202,25 @@ body {
 }
 
 /* footer */
-.address-items {
+.address {
     list-style: none;
 }
+
+.location-link,
+.address .mail-link,
+.address .tel-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--location-text-color);
+}
+
+.address .mail-link,
+.address .tel-link {
+    color: var(--address-text-color);
+}
+
+/* Page Portfolio */
