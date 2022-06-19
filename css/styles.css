@@ -24,6 +24,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
     background-color: var(--primary-bcg-color);
     color: var(--primary-text-color);
 }
@@ -48,7 +50,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--logo-web-text-color);
 }
@@ -87,7 +88,6 @@ body {
 .contacts .mail-link,
 .contacts .tel-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
@@ -150,34 +150,40 @@ body {
 }
 
 /* advantages */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .advantages-items {
     list-style: none;
 }
 
 .advantage-title {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
 
 .advantage-text {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 
 /* activities */
 .section-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
@@ -201,17 +207,13 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
 .team-member-function {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
-    /* color: #757575; */
 }
 
 /* footer */
@@ -224,9 +226,7 @@ body {
 .address .tel-link {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--location-text-color);
 }
@@ -253,6 +253,11 @@ body {
     color: var(--title-text-color);
     background-color: var(--portfolio-filter-bcg-color);
     border-radius: 4px;
+}
+
+.filter-title.active {
+    color: var(--filter-accent-color);
+    background: var(--portfolio-filter-accent-color);
 }
 
 .filter-title:hover,
